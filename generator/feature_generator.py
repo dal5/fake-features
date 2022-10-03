@@ -14,7 +14,6 @@ def generate_feature(feature_type, coords):
 def generate_feature_collection(config):
     features = []
     current_features = 0
-    geom_type = ''
     point_count = 0
     polygon_count = 0
     linestring_count = 0
