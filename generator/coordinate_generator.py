@@ -6,16 +6,16 @@ config = config.Config
 
 def generate(feature_type):
     if feature_type == 'Point':
-        x_coord = random.uniform(config.bboxMinX, config.bboxMaxX)
-        y_coord = random.uniform(config.bboxMinY, config.bboxMaxY)
+        x_coord = random.uniform(config.bbox_min_x, config.bbox_max_x)
+        y_coord = random.uniform(config.bbox_min_y, config.bbox_max_y)
         return [x_coord, y_coord]
     if feature_type == 'Polygon':
         current_complexity = 0
         target_complexity = random.randint(4, config.polygon_max_complexity)
 
         coordinates = []
-        starting_x_coord = random.uniform(config.bboxMinX, config.bboxMaxX)
-        starting_y_coord = random.uniform(config.bboxMinY, config.bboxMaxY)
+        starting_x_coord = random.uniform(config.bbox_min_x, config.bbox_max_x)
+        starting_y_coord = random.uniform(config.bbox_min_y, config.bbox_max_y)
 
         coordinates.append([starting_x_coord, starting_y_coord])
 
@@ -31,8 +31,8 @@ def generate(feature_type):
         current_complexity = 0
         target_complexity = random.randint(2, config.linestring_max_complexity)
 
-        starting_x_coord = random.uniform(config.bboxMinX, config.bboxMaxX)
-        starting_y_coord = random.uniform(config.bboxMinY, config.bboxMaxY)
+        starting_x_coord = random.uniform(config.bbox_min_x, config.bbox_max_x)
+        starting_y_coord = random.uniform(config.bbox_min_y, config.bbox_max_y)
 
         coordinates.append([starting_x_coord, starting_y_coord])
 

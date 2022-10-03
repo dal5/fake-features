@@ -1,0 +1,10 @@
+{
+  "crs": "4326",
+  "bbox_min_x": 1,
+  "bbox_min_y": 1,
+  "bbox_max_x": 2,
+  "bbox_max_y": 2,
+  "max_features": 1000,
+  "polygon_max_complexity": 6,
+  "linestring_max_complexity": 10
+}
